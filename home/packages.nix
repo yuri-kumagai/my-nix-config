@@ -2,7 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    neovim
     lazygit
     bat
     fzf
