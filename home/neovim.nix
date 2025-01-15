@@ -37,6 +37,10 @@
     };
     plugins = with pkgs.vimPlugins; [
       nvim-treesitter.withAllGrammars
+      catppuccin-nvim
+      which-key-nvim
+      lazygit-nvim
+      telescope-nvim
     ];
     extraLuaConfig = ''
       vim.api.nvim_set_keymap("i", "jj", "<Esc>", { noremap = true, silent = true })
@@ -44,6 +48,8 @@
       vim.opt.shiftwidth = 2
       vim.opt.expandtab = true
       vim.opt.softtabstop = 2
+
+      vim.cmd('colorscheme catppuccin-frappe')
 
       vim.api.nvim_create_autocmd("FileType", {
         pattern = "fsharp",
