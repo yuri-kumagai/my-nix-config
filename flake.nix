@@ -1,5 +1,5 @@
 {
-  description = "Home Manager configuration of areagrab";
+  description = "Home Manager configuration of y_kumagai";
 
   inputs = {
     # Specify the source of Home Manager and Nixpkgs.
@@ -15,7 +15,7 @@
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in {
-      homeConfigurations."areagrab" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."y_kumagai" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
         # Specify your home configuration modules here, for example,
